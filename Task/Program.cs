@@ -47,27 +47,8 @@ void PrintArray(int[] arr)
     Console.WriteLine();
 }
 
-void SortedArray(int[] numbers)
-{
-    int[] newArray = new int[numbers.Length];
-    for (int j = 0; j < numbers.Length; j++)
-
-    {
-        if (numbers[j] % 2 == 0)
-        {
-            newArray[j] = numbers[j];
-            Console.Write($"{newArray[j]}  ");
-        }
-    }
-}
 
 FillArray(firstArray);
 Console.WriteLine("Первоначальный массив: ");
 PrintArray(firstArray);
-Console.WriteLine("Отсортированный массив четных целых чисел: ");
-SortedArray (firstArray);
-
-
-
-
 
